@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>M. R. Khan & Associates – Tax, VAT, Legal & Financial Advisory</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5ef;--surf:#fff;--ink:#0f1b2d;--mut:#5a6578;--navy:#0b2447;--gold:#b8892f;--line:#e3dfd3;--hero:#0b2447;--herotx:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a111d;--surf:#121c2e;--ink:#eef1f6;--mut:#a3adbf;--navy:#d7b56d;--gold:#d7b56d;--line:#22304a;--hero:#050b15}}
+:root[data-theme="dark"]{--bg:#0a111d;--surf:#121c2e;--ink:#eef1f6;--mut:#a3adbf;--navy:#d7b56d;--gold:#d7b56d;--line:#22304a;--hero:#050b15}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:600}
+.logo b{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--hero);color:#d7b56d;font-family:'Playfair Display',serif}
+.logo span{font-size:14px;line-height:1.2}
+nav{display:flex;gap:26px;align-items:center;font-size:14px}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;gap:8px;align-items:center;padding:12px 22px;border-radius:999px;background:var(--gold);color:#101010;font-weight:600;border:0;cursor:pointer;font-size:15px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:1px solid currentColor;color:inherit}
+.ic{background:none;border:1px solid var(--line);color:var(--ink);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:16px}
+#burger{display:none}
+.hero{background:radial-gradient(900px 400px at 85% 0,#1d4380 0,transparent 60%),var(--hero);color:var(--herotx);padding:84px 0 70px;position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.tag{color:#d7b56d;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
+.hero h1{font-size:clamp(34px,5.5vw,62px);line-height:1.1;margin:14px 0 18px}
+.hero h1 em{color:#d7b56d;font-style:normal}
+.hero p{color:#c6d0e2;max-width:540px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;font-size:13px}
+.chips span{border:1px solid #ffffff33;border-radius:999px;padding:5px 14px;color:#dfe6f3}
+.card3d{background:#ffffff10;border:1px solid #ffffff26;border-radius:22px;padding:30px;backdrop-filter:blur(8px);transform-style:preserve-3d;transition:transform .15s}
+.card3d h3{font-size:22px;color:#fff}
+.card3d small{color:#d7b56d}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.stats div{border-top:1px solid #ffffff2a;padding-top:12px}
+.stats b{font-size:32px;font-family:'Playfair Display',serif;color:#fff;display:block}
+.stats span{font-size:12px;color:#b9c5dc}
+section{padding:80px 0}
+.head{max-width:620px;margin-bottom:34px}
+.head h2{font-size:clamp(28px,4vw,42px);margin-top:8px}
+.head p{color:var(--mut)}
+.tag.g{color:var(--gold)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tabs button{border:1px solid var(--line);background:var(--surf);color:var(--ink);padding:8px 16px;border-radius:999px;cursor:pointer;font-size:14px;transition:.2s}
+.tabs button.on,.tabs button:hover{background:var(--hero);color:#fff;border-color:var(--hero)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px}
+.sc{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:26px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.sc:hover{transform:translateY(-6px);box-shadow:0 18px 40px #0b244722;border-color:var(--gold)}
+.sc .i{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--gold) 18%,transparent);font-size:22px;margin-bottom:14px}
+.sc h3{font-size:20px;margin-bottom:12px}
+.sc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.sc li{font-size:12.5px;color:var(--mut);background:var(--bg);border:1px solid var(--line);padding:3px 10px;border-radius:999px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}
+.photo{aspect-ratio:4/5;border-radius:24px;background:linear-gradient(160deg,var(--hero),#1d4380);display:grid;place-items:center;color:#d7b56d;font:700 90px 'Playfair Display',serif;position:relative}
+.photo small{position:absolute;bottom:16px;font:12px Inter,sans-serif;color:#c6d0e2}
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.creds div{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+.creds b{display:block;color:var(--gold)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;counter-reset:s}
+.steps div{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:24px;counter-increment:s}
+.steps div:before{content:"0" counter(s);font:700 30px 'Playfair Display',serif;color:var(--gold)}
+.steps h3{font-size:18px;margin:6px 0}
+.steps p{margin:0;color:var(--mut);font-size:14px}
+.contact{background:var(--hero);color:#fff}
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.ci{display:flex;gap:14px;margin:16px 0;color:#d4dcec}
+.ci i{font-style:normal;width:40px;height:40px;flex:none;border-radius:50%;background:#ffffff14;display:grid;place-items:center}
+.ci a:hover{color:#d7b56d}
+.soc{display:flex;gap:12px;margin-top:24px}
+.soc a{width:44px;height:44px;border-radius:50%;border:1px solid #ffffff44;display:grid;place-items:center;transition:.2s}
+.soc a:hover{background:#d7b56d;color:#111;transform:translateY(-3px)}
+.soc svg{width:20px;height:20px;fill:currentColor}
+form{background:#ffffff0d;border:1px solid #ffffff22;border-radius:20px;padding:26px;display:grid;gap:12px}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #ffffff33;background:#ffffff10;color:#fff;font:inherit}
+select option{color:#111}
+::placeholder{color:#9fb0cc}
+footer{background:var(--hero);color:#8fa0bd;text-align:center;font-size:13px;padding:20px;border-top:1px solid #ffffff18}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px #0006;animation:pulse 2.4s infinite}
+.wa svg{width:28px;height:28px;fill:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #25d36688}70%{box-shadow:0 0 0 16px #25d36600}100%{box-shadow:0 0 0 0 #25d36600}}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+#burger{display:block}
+nav{position:absolute;top:68px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;border-bottom:1px solid var(--line);display:none}
+nav.open{display:flex}
+.hero .grid,.about,.contact .grid{grid-template-columns:1fr}
+.photo{max-width:320px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top"><b>K</b><span>M. R. KHAN<br>&amp; ASSOCIATES</span></a>
+<nav id="menu">
+<a href="#services">Services</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a>
+<button class="ic" id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
+<a class="btn" href="#contact">Free Consultation</a>
+</nav>
+<button class="ic" id="burger" aria-label="Menu">☰</button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap grid">
+<div class="rv">
+<div class="tag">Dhaka · Bangladesh</div>
+<h1>Tax, VAT &amp; Legal advice you can <em>trust</em>.</h1>
+<p>M. R. Khan &amp; Associates helps businesses and individuals with income tax, VAT, corporate law, RJSC compliance and financial advisory, led by Rakib Khan, tax lawyer and government-licensed income tax practitioner.</p>
+<div class="cta"><a class="btn" href="#contact">Book a Consultation</a><a class="btn ghost" href="#services">Our Services</a></div>
+<div class="chips"><span>Income Tax</span><span>VAT</span><span>Legal</span><span>Financial Advisory</span></div>
+</div>
+<div class="card3d rv" id="tilt">
+<small>FOUNDER &amp; CEO</small><h3>Rakib Khan</h3>
+<p style="color:#c6d0e2;font-size:14px;margin:6px 0 0">BBA · MBA · LL.B · Income Tax Practitioner (Govt. Permit)</p>
+<div class="stats">
+<div><b data-n="10" data-s="+">0</b><span>Years of experience</span></div>
+<div><b data-n="500" data-s="+">0</b><span>Clients served</span></div>
+<div><b data-n="8">0</b><span>Service areas</span></div>
+<div><b data-n="1000" data-s="+">0</b><span>Returns &amp; filings</span></div>
+</div>
+</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<div class="head rv"><div class="tag g">OUR SERVICES</div><h2>Complete tax, legal &amp; financial support</h2><p>Select a category to see what we handle.</p></div>
+<div class="tabs rv" id="tabs"></div>
+<div class="cards" id="cards"></div>
+</div></section>
+
+<section id="about" style="background:var(--surf)"><div class="wrap about">
+<div class="photo rv">RK<small>Add your photo here</small></div>
+<div class="rv">
+<div class="tag g">ABOUT</div><h2 style="font-size:clamp(28px,4vw,40px);margin:8px 0 14px">Rakib Khan</h2>
+<p style="color:var(--mut)">CEO &amp; Co-founder of M. R. Khan &amp; Associates. With a legal, business and taxation background, Rakib guides clients through tax compliance, litigation, VAT and corporate matters in Bangladesh. <i>(Replace this with your own biography.)</i></p>
+<div class="creds">
+<div><b>BBA &amp; MBA</b>Business &amp; finance foundation</div>
+<div><b>LL.B</b>Law &amp; litigation</div>
+<div><b>Income Tax Practitioner</b>Government permit, Bangladesh</div>
+<div><b>Co-founder &amp; CEO</b>M. R. Khan &amp; Associates</div>
+</div>
+</div></div></section>
+
+<section id="process"><div class="wrap">
+<div class="head rv"><div class="tag g">HOW WE WORK</div><h2>A simple, transparent process</h2></div>
+<div class="steps rv">
+<div><h3>Consult</h3><p>We understand your tax, legal or business need.</p></div>
+<div><h3>Plan</h3><p>A clear strategy, scope and timeline.</p></div>
+<div><h3>Execute</h3><p>Filing, documentation, representation or advisory work.</p></div>
+<div><h3>Support</h3><p>Ongoing compliance and follow-up.</p></div>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap grid">
+<div class="rv">
+<div class="tag">CONTACT</div><h2 style="font-size:clamp(28px,4vw,40px);margin:8px 0 10px">Let’s talk about your case</h2>
+<p style="color:#c6d0e2">Please call or WhatsApp us.</p>
+<div class="ci"><i>📞</i><div><a href="tel:+8801711021569">+8801711-021569</a><br><a href="tel:+8801911050292">+8801911-050292</a><br><a href="tel:+8801916000959">+8801916-000959</a></div></div>
+<div class="ci"><i>✉</i><a href="mailto:rhksuc@gmail.com">rhksuc@gmail.com</a></div>
+<div class="ci"><i>📍</i><span>A-28, Road-04, Block-B, Banasree,<br>Dhaka-1219, Bangladesh</span></div>
+<div class="soc">
+<a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8S15.6 3.5 14.2 3.5c-2.9 0-4.5 1.7-4.5 4.7v2.3H7v3.3h2.7V22z"/></svg></a>
+<a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.5 9h3.4v11H4.5zM6.2 3.5a2 2 0 110 4 2 2 0 010-4zM10 9h3.2v1.5c.5-.9 1.700-1.800 3.400-1.800 3.500 0 4.100 2.300 4.100 5.300V20h-3.400v-5.200c0-1.200 0-2.800-1.700-2.800s-2 1.300-2 2.700V20H10z"/></svg></a>
+<a href="https://wa.me/8801711021569" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.600 15L2 22l5.200-1.400A10 10 0 1012 2zm5.200 14c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.300 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2 1.100 1 2 1.300 2.300 1.400.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.700-.1 1.300z"/></svg></a>
+<a href="mailto:rhksuc@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 8L4 7.500V17h16V7.500z"/></svg></a>
+</div>
+</div>
+<form class="rv" id="form">
+<input id="fn" placeholder="Your name" required>
+<input id="fp" placeholder="Phone / WhatsApp" required>
+<select id="fs"><option>Income Tax</option><option>VAT &amp; Customs</option><option>Legal Services</option><option>RJSC &amp; Corporate</option><option>Financial Advisory</option><option>Foreign Fund &amp; Development Finance</option><option>Bank &amp; NBFI Advisory</option></select>
+<textarea id="fm" rows="4" placeholder="How can we help?"></textarea>
+<button class="btn" type="submit">Send via Email</button>
+<button class="btn ghost" type="button" id="wabtn">Send via WhatsApp</button>
+</form>
+</div></section>
+</main>
+<footer>© <span id="yr"></span> M. R. Khan &amp; Associates · Banasree, Dhaka-1219</footer>
+<a class="wa" href="https://wa.me/8801711021569" target="_blank" rel="noopener" aria-label="WhatsApp us"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.600 15L2 22l5.200-1.400A10 10 0 1012 2zm5.200 14c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.300 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2 1.100 1 2 1.300 2.300 1.400.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.700-.1 1.300z"/></svg></a>
+
+<script>
+const S=[
+{c:"Income Tax",i:"৳",t:"Income Tax & Taxation",l:["Tax Return","TIN","Assessment","Tax Planning","Tax Audit","Tax Appeal","Tax Litigation","Tax Compliance"]},
+{c:"VAT",i:"%",t:"VAT & Customs",l:["VAT Registration","VAT Return","VAT Audit","VAT Assessment","VAT Compliance","VAT Advisory","Customs & Import-Export Tax"]},
+{c:"Legal",i:"⚖",t:"Legal Services",l:["Corporate Law","Land & Property","Legal Opinion","Contracts","Litigation","Labour Law","Regulatory Compliance"]},
+{c:"Advisory",i:"📊",t:"Financial & Business Advisory",l:["Financial Management","Due Diligence","Business & Investment Advisory"]},
+{c:"Advisory",i:"🧾",t:"Accounting & Bookkeeping",l:["Budget & Cash Flow","ERP & Accounting Support","Financial Reporting","MIS & Management Reports"]},
+{c:"Corporate",i:"🏢",t:"RJSC & Corporate",l:["Company Registration","Name Clearance","RJSC Filing","Corporate Compliance","Director & Capital Changes","Foreign Company","Winding-up"]},
+{c:"Funding",i:"🌍",t:"Foreign Fund & Development Finance",l:["ADB","World Bank","JICA","IFC","IDCOL","KfW","GCF & Other Partners","Project Finance","Lender Documentation","Fund Disbursement"]},
+{c:"Banking",i:"🏦",t:"Local Bank & NBFI Advisory",l:["Loan & Project Finance","Fund Arrangement","Bank/NBFI Documentation","Share Transfer","Financial Advisory"]}
+];
+const cats=["All",...new Set(S.map(s=>s.c))],tabs=document.getElementById("tabs"),cards=document.getElementById("cards");
+function show(c){
+ tabs.innerHTML=cats.map(x=>`<button class="${x===c?'on':''}" data-c="${x}">${x}</button>`).join("");
+ cards.innerHTML=S.filter(s=>c==="All"||s.c===c).map(s=>`<article class="sc"><div class="i">${s.i}</div><h3>${s.t}</h3><ul>${s.l.map(x=>`<li>${x}</li>`).join("")}</ul></article>`).join("");
+}
+tabs.addEventListener("click",e=>{if(e.target.dataset.c)show(e.target.dataset.c)});
+show("All");
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");e.target.querySelectorAll("[data-n]").forEach(count);io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll(".rv").forEach(x=>io.observe(x));
+function count(el){const n=+el.dataset.n,s=el.dataset.s||"";let v=0;const st=Math.max(1,n/60);const t=setInterval(()=>{v+=st;if(v>=n){v=n;clearInterval(t)}el.textContent=Math.round(v)+(v>=n?s:"")},25)}
+// tilt
+const tl=document.getElementById("tilt");
+if(matchMedia("(hover:hover)").matches){tl.addEventListener("mousemove",e=>{const r=tl.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;tl.style.transform=`perspective(700px) rotateY(${x*10}deg) rotateX(${-y*10}deg)`});tl.addEventListener("mouseleave",()=>tl.style.transform="")}
+// menu + theme
+const m=document.getElementById("menu");
+document.getElementById("burger").onclick=()=>m.classList.toggle("open");
+m.addEventListener("click",e=>{if(e.target.tagName==="A")m.classList.remove("open")});
+document.getElementById("theme").onclick=()=>{const r=document.documentElement,d=r.dataset.theme==="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark"};
+document.getElementById("yr").textContent=new Date().getFullYear();
+// contact
+const body=()=>`Name: ${fn.value}\nPhone: ${fp.value}\nService: ${fs.value}\n\n${fm.value}`;
+form.onsubmit=e=>{e.preventDefault();location.href=`mailto:rhksuc@gmail.com?subject=${encodeURIComponent("Enquiry: "+fs.value)}&body=${encodeURIComponent(body())}`};
+wabtn.onclick=()=>window.open("https://wa.me/8801711021569?text="+encodeURIComponent(body()),"_blank");
+</script>
+</body>
+</html>
