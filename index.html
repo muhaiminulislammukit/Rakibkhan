@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>M. R. Khan & Associates – Tax, VAT, Legal & Financial Advisory</title>
+<link rel="icon" type="image/png" href="assets/mr-khan-logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f7f5ef;--surf:#fff;--ink:#0f1b2d;--mut:#5a6578;--navy:#0b2447;--gold:#b8892f;--line:#e3dfd3;--hero:#0b2447;--herotx:#fff;
@@ -19,7 +20,7 @@ a{color:inherit;text-decoration:none}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:600}
-.logo b{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--hero);color:#d7b56d;font-family:'Playfair Display',serif}
+.logo img{display:block;width:48px;height:42px;object-fit:contain;border-radius:6px;background:#fff}
 .logo span{font-size:14px;line-height:1.2}
 nav{display:flex;gap:26px;align-items:center;font-size:14px}
 nav a:hover{color:var(--gold)}
@@ -43,6 +44,7 @@ nav a:hover{color:var(--gold)}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
 .stats div{border-top:1px solid #ffffff2a;padding-top:12px}
 .stats b{font-size:32px;font-family:'Playfair Display',serif;color:#fff;display:block}
+.stats b:not([data-n]){font-size:18px}
 .stats span{font-size:12px;color:#b9c5dc}
 section{padding:80px 0}
 .head{max-width:620px;margin-bottom:34px}
@@ -60,8 +62,8 @@ section{padding:80px 0}
 .sc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
 .sc li{font-size:12.5px;color:var(--mut);background:var(--bg);border:1px solid var(--line);padding:3px 10px;border-radius:999px}
 .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}
-.photo{aspect-ratio:4/5;border-radius:24px;background:linear-gradient(160deg,var(--hero),#1d4380);display:grid;place-items:center;color:#d7b56d;font:700 90px 'Playfair Display',serif;position:relative}
-.photo small{position:absolute;bottom:16px;font:12px Inter,sans-serif;color:#c6d0e2}
+.photo{aspect-ratio:4/5;border-radius:24px;background:linear-gradient(160deg,var(--hero),#1d4380);position:relative;overflow:hidden}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .creds{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
 .creds div{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
 .creds b{display:block;color:var(--gold)}
@@ -101,7 +103,7 @@ nav.open{display:flex}
 </head>
 <body>
 <header><div class="wrap nav">
-<a class="logo" href="#top"><b>K</b><span>M. R. KHAN<br>&amp; ASSOCIATES</span></a>
+<a class="logo" href="#top"><img src="assets/mr-khan-logo.png" alt="M. R. Khan &amp; Associates logo"><span>M. R. KHAN<br>&amp; ASSOCIATES</span></a>
 <nav id="menu">
 <a href="#services">Services</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a>
 <button class="ic" id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
@@ -123,10 +125,10 @@ nav.open{display:flex}
 <small>FOUNDER &amp; CEO</small><h3>Rakib Khan</h3>
 <p style="color:#c6d0e2;font-size:14px;margin:6px 0 0">BBA · MBA · LL.B · Income Tax Practitioner (Govt. Permit)</p>
 <div class="stats">
-<div><b data-n="10" data-s="+">0</b><span>Years of experience</span></div>
-<div><b data-n="500" data-s="+">0</b><span>Clients served</span></div>
+<div><b data-n="1">0</b><span>Year in operation</span></div>
+<div><b>New firm</b><span>Personalized service</span></div>
 <div><b data-n="8">0</b><span>Service areas</span></div>
-<div><b data-n="1000" data-s="+">0</b><span>Returns &amp; filings</span></div>
+<div><b>Tax &amp; legal</b><span>Practical support</span></div>
 </div>
 </div>
 </div></div>
@@ -138,7 +140,7 @@ nav.open{display:flex}
 </div></section>
 
 <section id="about" style="background:var(--surf)"><div class="wrap about">
-<div class="photo rv">RK<small>Add your photo here</small></div>
+<div class="photo rv"><img src="assets/rakib-khan.png" alt="Rakib Khan, CEO and Co-founder of M. R. Khan &amp; Associates" loading="lazy"></div>
 <div class="rv">
 <div class="tag g">ABOUT</div><h2 style="font-size:clamp(28px,4vw,40px);margin:8px 0 14px">Rakib Khan</h2>
 <p style="color:var(--mut)">CEO &amp; Co-founder of M. R. Khan &amp; Associates. With a legal, business and taxation background, Rakib guides clients through tax compliance, litigation, VAT and corporate matters in Bangladesh. <i>(Replace this with your own biography.)</i></p>
